@@ -15,18 +15,23 @@
   </head>
   <body>
     <header class="header">
-      <div class="burger header__burger">
-        <span class="burger__line"></span>
+      <div class="header__burger">
+        <nav class="dropdown">
+          <button class="dropbtn">Меню</button>
+          <div class="dropdown-content">
+            <a href="#events">Актуальні подiї</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#subscription">Підписка</a>
+          </div>
+        </nav>
       </div>
+
       <div class="header__elem">
         Події
       </div>
       <div class="header__info">
         <h1 class="header__title">
-          Худож
-          <span class="header__span">
-            ній
-          </span>
+          Худож<span class="header__span">ній</span>
           <br>
           музей
         </h1>
@@ -51,7 +56,7 @@
       </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section" id="events">
         <h2 class="section__heading">
           Актуальні події
         </h2>
@@ -136,7 +141,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="gallery">
         <h2 class="section__heading">
           Галерея
         </h2>
@@ -175,7 +180,7 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="subscription">
         <div class="subscription">
           <div class="subscription__item">
             <p class="subscription__title">
@@ -186,7 +191,7 @@
             </p>
             <form
               class="subscription__form"
-              action="#"
+              action="https://formspree.io/mdowynvj"
               method="POST"
             >
               <label for="email">
